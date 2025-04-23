@@ -34,4 +34,4 @@ Pour démarrer avec le projet, suivez ces étapes simples :
 
 1. **Clonez le dépôt** :
    ```bash
-   git clone https://github.com/elfried96/elfriedkinzounpionniers.git
+   git clone https://github.com/elfried96/elfriedkinzounpionniers.git# elfriedkinzounpionnier
