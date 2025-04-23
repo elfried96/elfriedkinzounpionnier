@@ -1,0 +1,24 @@
+site_name: Annotation automatique des maladies du manioc et images africaines
+theme:
+  name: material
+nav:
+  - Accueil: index.md
+  - Méthodologie: methodologie.md
+  - Installation: installation.md
+  - Résultats: resultats.md
+  - Conclusion: conclusion.md
+  - Apk: apk.md
+  - data: data.md
+  - Contact: contact.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - attr_list
+  - def_list
+  - tables
+  - md_in_html
+
