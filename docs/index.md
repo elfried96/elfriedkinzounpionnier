@@ -1,7 +1,7 @@
 ## Projet : Classification des maladies du manioc
 
 ---
-![Classification des maladies du manioc](./docs/assets/chp1.jpg){ style="width: 100%; display: block; margin: 0 auto;" }
+![Classification des maladies du manioc](docs/assets/chp1.jpg){ style="width: 100%; display: block; margin: 0 auto;" }
 
 ---
 
