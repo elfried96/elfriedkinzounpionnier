@@ -75,3 +75,14 @@ elfriedkinzounpionniers/
 ├── README.md              # Lien vers docs/index.md
 └── tests/                 # Tests unitaires
 ```
+
+## 📄 Licence
+
+Distribué sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+## 📞 Contact
+
+Elfried Kinzoun • ekfriedkinzoun@gmail.com  
+GitHub : [elfried96](https://github.com/elfried96)
