@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methodologie-du-pipeline-dannotation-automatique" class="md-skip">
+        <a href="#methodologie-du-pipeline-de-classification-et-dannotation" class="md-skip">
           Skip to content
         </a>
       
@@ -222,8 +222,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -256,8 +254,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -266,11 +262,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble-du-pipeline" class="md-nav__link">
+  <a href="#methodologie-du-pipeline-de-classification-et-dannotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Vue d’ensemble du Pipeline
+      Méthodologie du Pipeline de Classification et d’Annotation
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Méthodologie du Pipeline de Classification et d’Annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-collecte-et-description-des-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Collecte et Description des Scènes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pipeline-de-classification-multiclasse-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pipeline de Classification Multiclasse (PyTorch)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-annotation-automatique-via-gpt-4-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Annotation Automatique via GPT-4 Vision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-integration-a-lapplication-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Intégration à l’Application Web
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -311,34 +349,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../resultats/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Résultats
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../conclusion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conclusion
+    data
     
   </span>
   
@@ -377,12 +393,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/" class="md-nav__link">
+      <a href="../conclusion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    data
+    Conclusion
     
   </span>
   
@@ -431,8 +447,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -441,11 +455,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble-du-pipeline" class="md-nav__link">
+  <a href="#methodologie-du-pipeline-de-classification-et-dannotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Vue d’ensemble du Pipeline
+      Méthodologie du Pipeline de Classification et d’Annotation
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Méthodologie du Pipeline de Classification et d’Annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-collecte-et-description-des-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Collecte et Description des Scènes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pipeline-de-classification-multiclasse-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pipeline de Classification Multiclasse (PyTorch)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-annotation-automatique-via-gpt-4-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Annotation Automatique via GPT-4 Vision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-integration-a-lapplication-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Intégration à l’Application Web
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -465,25 +521,142 @@
 
 
 
-<h1 id="methodologie-du-pipeline-dannotation-automatique">Méthodologie du Pipeline d’Annotation Automatique<a class="headerlink" href="#methodologie-du-pipeline-dannotation-automatique" title="Permanent link">&para;</a></h1>
-<p>Ce document décrit de manière exhaustive le pipeline utilisé pour l’annotation automatique des images de maladies du manioc. Chaque étape a été conçue pour garantir la reproductibilité, la précision et la robustesse de l’annotation, en tirant parti des API Azure.</p>
+  <h1>Méthodologie</h1>
+
+<h2 id="methodologie-du-pipeline-de-classification-et-dannotation">Méthodologie du Pipeline de Classification et d’Annotation<a class="headerlink" href="#methodologie-du-pipeline-de-classification-et-dannotation" title="Permanent link">&para;</a></h2>
+<p>Ce document décrit le pipeline actualisé, combinant à la fois l’annotation automatique des scènes et la classification multiclasse, ainsi que l’intégration de l’application web Cassava Olùṣọ́.</p>
 <hr />
-<h2 id="vue-densemble-du-pipeline">Vue d’ensemble du Pipeline<a class="headerlink" href="#vue-densemble-du-pipeline" title="Permanent link">&para;</a></h2>
-<p>Le pipeline d’annotation automatique se décline en 5 étapes principales :</p>
+<h3 id="1-collecte-et-description-des-scenes">1. Collecte et Description des Scènes<a class="headerlink" href="#1-collecte-et-description-des-scenes" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Collecte et Prétraitement des Données</strong></li>
-<li><strong>Configuration et Utilisation des API Azure</strong></li>
-<li><strong>Annotation Automatique</strong></li>
-<li><strong>Post-traitement et Agrégation des Résultats</strong></li>
-<li><strong>Évaluation des Performances et Validation</strong></li>
+<li>
+<p><strong>Acquisition des images</strong></p>
+</li>
+<li>
+<p>Photos de feuilles de manioc prises in situ et issues de bases ouvertes.</p>
+</li>
+<li>
+<p>Organisation en cinq catégories :</p>
+<ul>
+<li><em>Cassava Bacterial Blight</em></li>
+<li><em>Cassava Brown Streak Disease</em></li>
+<li><em>Cassava Green Mottle</em></li>
+<li><em>Cassava Mosaic Disease</em></li>
+<li><em>Cassava Healthy</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Prétraitement des images</strong></p>
+</li>
+<li>
+<p>Redimensionnement à 224×224 px, conversion RGB </p>
+</li>
+<li>Normalisation (moyennes et écarts‑types calculés sur le jeu complet)</li>
+<li>Séparation en <em>train</em>, <em>validation</em>, <em>test</em> (70/15/15) avec copie des fichiers dans <code>/processing</code></li>
 </ol>
-<p>Pour mieux visualiser l’architecture générale, voici un schéma simplifié :</p>
-<p>```mermaid
-flowchart TD
-    A[Collecte des Images] --&gt; B[Prétraitement des Images]
-    B --&gt; C[Interrogation des API Azure]
-    C --&gt; D[Post-traitement]
-    D --&gt; E[Évaluation et Validation]</p>
+<hr />
+<h3 id="2-pipeline-de-classification-multiclasse-pytorch">2. Pipeline de Classification Multiclasse (PyTorch)<a class="headerlink" href="#2-pipeline-de-classification-multiclasse-pytorch" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Construction du modèle</strong></p>
+</li>
+<li>
+<p>CNN personnalisé (<code>CassavaCNN</code>) ou modèle pré‑entraîné (ResNet18) fine‑tuned</p>
+</li>
+<li>
+<p>Trois blocs conv + pool, deux couches fully‑connected, sortie 5 classes</p>
+</li>
+<li>
+<p><strong>Gestion du déséquilibre</strong></p>
+</li>
+<li>
+<p>Calcul de poids inverses de fréquence</p>
+</li>
+<li>Mise en place d’un <code>WeightedRandomSampler</code> pour des batchs équilibrés</li>
+<li>
+<p>(Optionnel) Data augmentation ciblée</p>
+</li>
+<li>
+<p><strong>Boucle d’entraînement</strong></p>
+</li>
+<li>
+<p>Fonctions <code>train()</code> et <code>predict()</code> encapsulées dans <code>training.py</code></p>
+</li>
+<li>
+<p>Enregistrement des métriques de perte et de précision par époque</p>
+</li>
+<li>
+<p><strong>Évaluation et visualisation</strong></p>
+</li>
+<li>
+<p>Courbes de loss / accuracy</p>
+</li>
+<li>Matrice de confusion via Scikit‑learn</li>
+<li>Saliency maps ou Grad‑CAM pour l’explicabilité</li>
+</ol>
+<hr />
+<ul>
+<li>Prédictions PyTorch </li>
+<li>Post‑traitement des scores (seuil, moyenne pondérée)</li>
+</ul>
+<h3 id="3-annotation-automatique-via-gpt-4-vision">3. Annotation Automatique via GPT-4 Vision<a class="headerlink" href="#3-annotation-automatique-via-gpt-4-vision" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Utilisation de l’API GPT (Azure OpenAI)</strong></p>
+</li>
+<li>
+<p>Génération automatique de descriptions de scène pour chaque image de feuille de manioc</p>
+</li>
+<li>
+<p>Analyse sémantique de la scène : niveau de flétrissement, présence de taches, teinte dominante, etc.</p>
+</li>
+<li>
+<p><strong>Contribution à l’explicabilité du modèle</strong></p>
+</li>
+<li>
+<p>Les descriptions générées sont utilisées pour enrichir le retour utilisateur dans l’application</p>
+</li>
+<li>
+<p>Elles permettent aussi de vérifier la cohérence entre la prédiction du modèle et l’apparence réelle de la feuille</p>
+</li>
+<li>
+<p><strong>Post-traitement des résultats</strong></p>
+</li>
+<li>
+<p>Alignement des descriptions avec les prédictions du modèle PyTorch</p>
+</li>
+<li>Conservation des textes utiles dans la base pour annotation manuelle et audit de qualité</li>
+</ol>
+<hr />
+<h3 id="4-integration-a-lapplication-web">4. Intégration à l’Application Web<a class="headerlink" href="#4-integration-a-lapplication-web" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Frontend Cassava Olùṣọ́</strong></p>
+</li>
+<li>
+<p>Composant d’upload et aperçu immédiat</p>
+</li>
+<li>Affichage du résultat (maladie + pourcentage de confiance)</li>
+<li>
+<p>Description des symptômes et recommandations liées</p>
+</li>
+<li>
+<p><strong>API Backend (FastAPI)</strong></p>
+</li>
+<li>
+<p>Endpoint <code>/predict</code> acceptant une image et retournant JSON {classe, score, description}</p>
+</li>
+<li>
+<p><strong>Déploiement</strong></p>
+</li>
+<li>
+<p>Dockerisation du service</p>
+</li>
+<li>CI/CD avec GitHub Actions pour tests et déploiement automatique</li>
+</ol>
+<hr />
+<blockquote>
+<p>Cette méthodologie combinée garantit une annotation précise, une expérience utilisateur fluide et une reproductibilité académique et industrielle.</p>
+</blockquote>
 
 
 
