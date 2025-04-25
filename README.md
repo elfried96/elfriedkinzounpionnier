@@ -125,4 +125,4 @@ Elfried Kinzoun • ekfriedkinzoun@gmail.com
 GitHub : [elfried96](https://github.com/elfried96)
 
 Project Link: [cassava-vision-guard](https://github.com/elfried96/cassava-vision-guard)  
-Documentation : [Consulter la documentation](https://elfriedkinzounpionniers.readthedocs.io)
+Documentation : [Consulter la documentation](https://elfried96.github.io/elfriedkinzounpionnier/)
