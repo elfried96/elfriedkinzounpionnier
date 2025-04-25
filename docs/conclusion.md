@@ -1,4 +1,4 @@
-```markdown
+
 # ✅ Conclusion et perspectives
 
 Ce document résume les réalisations du projet de classification des maladies du manioc et propose des axes d'amélioration pour les travaux futurs.
@@ -26,7 +26,7 @@ Ce document résume les réalisations du projet de classification des maladies d
 
 - **Augmentation des données** : Collecte de nouvelles images pour enrichir le dataset.
 - **Optimisation des hyperparamètres** : Exploration de différentes configurations pour améliorer la performance.
-- **Déploiement** : Mise en place d'une API ou d'une interface utilisateur pour faciliter l'utilisation du modèle.
+- **Déploiement** : Amélioration de l'interface utilisateur pour faciliter l'utilisation du modèle.
 
 ---
 

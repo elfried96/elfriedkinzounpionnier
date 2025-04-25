@@ -5,10 +5,9 @@ nav:
   - Accueil: index.md
   - Méthodologie: methodologie.md
   - Installation: installation.md
-  - Résultats: resultats.md
-  - Conclusion: conclusion.md
-  - Apk: apk.md
   - data: data.md
+  - Apk: apk.md
+  - Conclusion: conclusion.md
   - Contact: contact.md
 markdown_extensions:
   - admonition

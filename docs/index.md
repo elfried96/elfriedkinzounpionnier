@@ -42,7 +42,6 @@ L’automatisation de la détection et de la classification accélère la survei
 | Python & PyTorch       | Modélisation, entraînement, évaluation                |
 | torchvision            | `ImageFolder`, transforms, modèles pré-entraînés      |
 | Matplotlib & Seaborn   | Visualisation (courbes, matrices de confusion)        |
-| Captum / TorchCAM      | Explicabilité (saliency maps, Grad-CAM)               |
 | Jupyter Notebooks      | Exploration, démo interactive                        |
 | MkDocs + Material      | Génération du site de documentation                   |
 | GitHub Actions         | CI pour tests et déploiement documentaire             |

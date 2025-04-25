@@ -1,6 +1,5 @@
 # Cassava Olùṣọ́ — Diagnostic Intelligent des Maladies du Manioc
 
-[![Build Status](https://github.com/elfried96/cassava-vision-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/elfried96/cassava-vision-guard/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/cassava-olusọ.svg)](https://www.npmjs.com/package/cassava-olusọ)
 [![Docs](https://img.shields.io/readthedocs/olmio/latest.svg)](https://elfriedkinzounpionniers.readthedocs.io)
@@ -54,8 +53,8 @@ L’application vise à **faciliter le diagnostic** pour les agriculteurs et les
 ## 🎨 Démos et Captures d’Écran
 
 <p align="center">
-  <img src="docs/assets/demo-home.png" alt="Page d'accueil" width="500" />
-  <img src="docs/assets/demo-result.png" alt="Résultat de classification" width="500" />
+  <img src="docs/assets/output1.png" alt="Page d'accueil" width="500" />
+  <img src="docs/assets/output2.png" alt="Résultat de classification" width="500" />
 </p>
 
 ---
